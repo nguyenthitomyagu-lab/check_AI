@@ -1,5 +1,4 @@
 name: Deploy Vite app to GitHub Pages
-
 on:
   push:
     branches: [ main ]
@@ -23,8 +22,9 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-      - run: npm ci
+      - run: npm install
       - run: npm run build
+      - run: cp dist/index.html dist/404.html   # SPA tránh 404 khi refresh
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
