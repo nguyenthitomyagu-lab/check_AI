@@ -1,4 +1,7 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
 export default defineConfig({
   plugins: [react()],
-  base: '/check_AI/',   // rất quan trọng khi chạy GitHub Pages mặc định
+  base: '/check_AI/',
 })
