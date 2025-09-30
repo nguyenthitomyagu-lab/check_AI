@@ -1,0 +1,5 @@
+{
+  "name": "AI Text Analyzer",
+  "description": "An advanced tool to analyze text to determine its likely origin (AI or human-written). It provides a probability score, highlights evidence, and offers concrete suggestions to make the text sound more natural and human-like.",
+  "requestFramePermissions": []
+}
